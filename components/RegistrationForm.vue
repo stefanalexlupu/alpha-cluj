@@ -43,6 +43,7 @@
       />
       <Button
         text="Trimite"
+        @submit="submitRegistrationForm()"
       />
     </FormulateForm>
   </div>

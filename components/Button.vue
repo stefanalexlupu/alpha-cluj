@@ -1,9 +1,7 @@
 <template>
-  <button class="button">
-    <FormulateInput type="button" input-class="rounded py-1 px-6 bg-red-600 text-white hover:bg-red-700">
-      {{ text }}
-    </FormulateInput>
-  </button>
+  <FormulateInput type="button" input-class="rounded py-1 px-6 bg-red-600 text-white hover:bg-red-700">
+    {{ text }}
+  </FormulateInput>
 </template>
 
 <script>
@@ -15,6 +13,10 @@ export default {
       type: String
     }
   },
-  methods: {}
+  methods: {
+    submitRegistrationForm (e) {
+      e.preventDefault()
+    }
+  }
 }
 </script>
