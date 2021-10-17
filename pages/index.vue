@@ -14,6 +14,7 @@
     </section>
 
     <section id="register">
+      <RegistrationForm />
       <!-- TODO: Create the registration section -->
     </section>
   </div>
