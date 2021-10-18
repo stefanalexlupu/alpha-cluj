@@ -1,28 +1,34 @@
 <template>
-  <div class="container mx-auto max-w-lg ">
-    <h1 class="text-4xl mb-6 mt-8 font-bold text-center">
+  <div class="container px-4 mx-auto max-w-lg">
+    <h1 class="mb-6 mt-8 font-bold text-center text-4xl">
       Formular
     </h1>
-    <FormulateForm class="mx-4 sm:mx-0">
+    <FormulateForm>
       <FormulateInput
+        label-class="is-required"
         type="text"
-        label="Nume si prenume*"
+        label="Nume si prenume"
+        name="name"
         validation="required"
         :validation-messages="{
           required: 'Campul este obligatoriu',
         }"
       />
       <FormulateInput
+        label-class="is-required"
         type="number"
-        label="Varsta*"
+        label="Varsta"
+        name="age"
         validation="required"
         :validation-messages="{
           required: 'Campul este obligatoriu',
         }"
       />
       <FormulateInput
+        label-class="is-required"
         type="number"
-        label="Telefon*"
+        label="Telefon"
+        name="phone"
         validation="required"
         :validation-messages="{
           required: 'Campul este obligatoriu',
@@ -31,20 +37,22 @@
       <FormulateInput
         type="textarea"
         label="Cum ai aflat despre intalnirile Alpha?"
+        name="info"
       />
       <FormulateInput
+        label-class="is-required"
         type="checkbox"
         wrapper-class="flex"
-        label="Am citit si sunt de acord cu politica de protectie a datelor*"
+        label="Am citit si sunt de acord cu politica de protectie a datelor"
+        name="gdpr"
         validation="required"
         :validation-messages="{
           required: 'Campul este obligatoriu',
         }"
       />
-      <Button
-        text="Trimite"
-        @submit="submitRegistrationForm()"
-      />
+      <AlphaButton @submit="submitRegistrationForm()">
+        Trimite
+      </AlphaButton>
     </FormulateForm>
   </div>
 </template>
@@ -52,14 +60,14 @@
 <script>
 import Vue from 'vue'
 import VueFormulate from '@braid/vue-formulate'
-import Button from './Button.vue'
+import AlphaButton from './AlphaButton.vue'
 
 Vue.use(VueFormulate, {
   classes: {
     outer (context) {
       switch (context.classification) {
         case 'textarea':
-          return 'mb-1'
+          return 'mb-4'
         default:
           return 'mb-4'
       }
@@ -69,18 +77,25 @@ Vue.use(VueFormulate, {
         case 'box':
           return 'mr-1'
         default:
-          return 'border border-gray-400 rounded px-3 py-2 outline-none w-full mb-1'
+          return 'px-3 py-2 mb-1 border border-gray-400 rounded outline-none w-full'
       }
     },
     label: 'font-medium text-sm',
-    error: 'text-red-700 text-xs mb-1'
+    error: 'mb-1 text-red-700 text-xs '
   }
 })
 
 export default {
   name: 'RegistrationForm',
   components: {
-    Button
+    AlphaButton
   }
 }
 </script>
+
+<style>
+.is-required::after {
+  color: theme('colors.primary-base');
+  content: '*';
+}
+</style>
