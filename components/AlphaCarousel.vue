@@ -1,5 +1,12 @@
 <template>
-  <VueSlickCarousel dots dots-class="alpha-dots" :slides-to-show="3" autoplay :autoplay-speed="15000">
+  <VueSlickCarousel
+    dots
+    autoplay
+    :autoplay-speed="15000"
+    :dots-class="dotsClass"
+    :slides-to-show="3"
+    :responsive="settings"
+  >
     <slot />
   </VueSlickCarousel>
 </template>
@@ -13,7 +20,18 @@ export default {
   name: 'AlphaCarousel',
   components: {
     VueSlickCarousel
-  }
+  },
+  data: () => ({
+    dotsClass: 'alpha-dots',
+    settings: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  })
 }
 </script>
 
