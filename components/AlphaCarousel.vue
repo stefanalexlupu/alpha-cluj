@@ -108,13 +108,13 @@ export default {
   text-align: center;
 
   opacity: 0.25;
-  color: black;
+  color: theme('colors.foreground.base');
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .alpha-dots li.slick-active button:before {
   opacity: 0.75;
-  color: black;
+  color: theme('colors.foreground.base');
 }
 </style>

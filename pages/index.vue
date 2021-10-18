@@ -11,7 +11,7 @@
 
     <section id="testimonials" class="container mx-auto px-4">
       <h1 class="text-center font-bold text-5xl mb-8">
-        Alții ce spun despre grupurile Alpha?
+        Alții ce spun despre grupurile <span class="text-primary-base">Alpha</span>?
       </h1>
       <AlphaCarousel>
         <div v-for="(testimonial, i) in testimonials" :key="i" class="px-4">
