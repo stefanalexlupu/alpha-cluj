@@ -42,7 +42,6 @@
       <FormulateInput
         label-class="is-required"
         type="checkbox"
-        wrapper-class="flex"
         label="Am citit si sunt de acord cu politica de protectie a datelor"
         name="gdpr"
         validation="required"
@@ -64,12 +63,13 @@ import AlphaButton from './AlphaButton.vue'
 
 Vue.use(VueFormulate, {
   classes: {
-    outer (context) {
+    outer: 'mb-4',
+    wrapper (context) {
       switch (context.classification) {
-        case 'textarea':
-          return 'mb-4'
+        case 'box':
+          return 'flex'
         default:
-          return 'mb-4'
+          return ''
       }
     },
     input (context) {
