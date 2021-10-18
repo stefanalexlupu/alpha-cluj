@@ -3,6 +3,8 @@
     <section id="top-section">
       <!-- TODO: Create the top section -->
       <!-- @Mihai Iov -->
+      <TheNavBar />
+      <TheHeader />
     </section>
 
     <section id="about">
