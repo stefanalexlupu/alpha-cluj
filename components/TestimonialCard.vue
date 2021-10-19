@@ -22,18 +22,15 @@ export default {
   props: {
     image: {
       type: String,
-      required: true,
-      default: require('@/static/images/avatar.jpg')
+      default: '/images/avatar.jpg'
     },
     name: {
       type: String,
-      required: true,
-      default: ''
+      required: true
     },
     text: {
       type: String,
-      required: true,
-      default: ''
+      required: true
     }
   }
 }
