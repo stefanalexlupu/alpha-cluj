@@ -57,11 +57,6 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import FormStyle from '../plugins/FormStyle'
-
-Vue.use(FormStyle)
-
 export default {
   name: 'RegistrationForm'
 }
@@ -69,7 +64,7 @@ export default {
 
 <style>
 .is-required::after {
-  color: theme('colors.primary-base');
+  color: theme('colors.primary.base');
   content: '*';
 }
 </style>

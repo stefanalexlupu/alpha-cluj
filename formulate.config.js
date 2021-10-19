@@ -1,7 +1,4 @@
-import Vue from 'vue'
-import VueFormulate from '@braid/vue-formulate'
-
-Vue.use(VueFormulate, {
+export default {
   classes: {
     outer: 'mb-4',
     wrapper (context) {
@@ -23,4 +20,4 @@ Vue.use(VueFormulate, {
     label: 'font-medium text-sm',
     error: 'mb-1 text-red-700 text-xs '
   }
-})
+}
