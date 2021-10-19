@@ -27,6 +27,7 @@
 
     <section id="register">
       <!-- TODO: Create the registration section -->
+      <RegistrationForm />
     </section>
   </div>
 </template>
@@ -34,10 +35,12 @@
 <script>
 import AlphaCarousel from '@/components/AlphaCarousel.vue'
 import TestimonialCard from '@/components/TestimonialCard.vue'
+import RegistrationForm from '~/components/RegistrationForm.vue'
 export default {
   components: {
     AlphaCarousel,
-    TestimonialCard
+    TestimonialCard,
+    RegistrationForm
   },
   data: () => ({
     testimonials: [
