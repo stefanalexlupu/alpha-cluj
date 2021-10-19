@@ -1,9 +1,9 @@
 <template>
-  <div class=" p-8 bg-foregreground-base rounded ">
+  <div class=" p-8 bg-foreground-base rounded ">
     <div class="flex items-center gap-4 mb-4">
       <img
         :src="image"
-        alt="image"
+        :alt="name"
         class=" w-16 h-16 object-cover rounded-full"
       />
       <span>
@@ -22,14 +22,17 @@ export default {
   props: {
     image: {
       type: String,
-      default: ''
+      required: true,
+      default: require('@/static/images/avatar.jpg')
     },
     name: {
       type: String,
+      required: true,
       default: ''
     },
     text: {
       type: String,
+      required: true,
       default: ''
     }
   }
