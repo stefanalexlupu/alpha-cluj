@@ -28,14 +28,19 @@
     <section id="register">
       <!-- TODO: Create the registration section -->
     </section>
+    <section id="footer">
+      <Footer />
+    </section>
   </div>
 </template>
 
 <script>
 import AlphaCarousel from '@/components/AlphaCarousel.vue'
+import Footer from '~/components/Footer.vue'
 export default {
   components: {
-    AlphaCarousel
+    AlphaCarousel,
+    Footer
   },
   data: () => ({
     testimonials: [
