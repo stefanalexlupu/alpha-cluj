@@ -6,7 +6,7 @@
         <p class="mt-2 text-base text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam, at distinctio doloremque doloribus esse facere impedit inventore laborum modi mollitia natus nesciunt nihil nostrum odit porro quibusdam quidem reiciendis repellendus soluta sunt ut voluptatem.</p>
         <p class="mt-2 text-base text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dolorem iusto, nisi quas quia tempore unde? Assumenda dolores expedita officiis rerum! Adipisci architecto atque debitis earum eos esse in nam?</p>
         <AlphaButton @click="goToLink()">
-          Înregistrează-te acum!
+          <a href="#register">Înregistrează-te acum!</a>
         </AlphaButton>
       </div>
       <div class="hero-video-right relative h-0 mb-12 md:mb-0">
@@ -18,11 +18,6 @@
 
 <script>
 export default {
-  methods: {
-    goToLink (e) {
-      location.href = '#register'
-    }
-  }
 }
 </script>
 <style>
