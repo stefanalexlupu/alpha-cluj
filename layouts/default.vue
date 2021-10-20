@@ -3,7 +3,16 @@
     <!-- TODO: Implement the header component -->
     <!-- <TheHeader /> -->
     <Nuxt />
-    <!-- TODO: Implement the footer component -->
-    <!-- <TheFooter /> -->
+    <TheFooter />
   </div>
 </template>
+
+<script>
+import TheFooter from '@/components/TheFooter.vue'
+
+export default {
+  components: {
+    TheFooter
+  }
+}
+</script>
