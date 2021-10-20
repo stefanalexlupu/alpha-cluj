@@ -6,7 +6,8 @@ module.exports = {
       colors: {
         foreground: {
           base: '#1E2433'
-        }
+        },
+        'betel-centru': '#FFB800'
       }
     }
   },
