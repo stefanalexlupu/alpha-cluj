@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-4 bg-gray-100 py-2 flex flex-col md:flex-row justify-center items-center text-center md:text-left w-full">
+  <div class="px-4 bg-gray-100 py-2 flex flex-col md:flex-row justify-center items-center text-center md:text-left w-full">
     <p class="leading-5">
       Powered by <a class="leading-5 font-bold underline text-betel-centru" href="https://bisericabetel.com/betelcentru/" target="_blank">Betel Centru</a>
     </p>
