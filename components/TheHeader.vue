@@ -5,7 +5,9 @@
         <h1 class="text-4xl text-white">Lorem ipsum</h1>
         <p class="text-base text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam, at distinctio doloremque doloribus esse facere impedit inventore laborum modi mollitia natus nesciunt nihil nostrum odit porro quibusdam quidem reiciendis repellendus soluta sunt ut voluptatem.</p>
         <p class="text-base text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dolorem iusto, nisi quas quia tempore unde? Assumenda dolores expedita officiis rerum! Adipisci architecto atque debitis earum eos esse in nam?</p>
-        <Button @click="goToLink()" text="Înregistrează-te acum!" />
+        <AlphaButton @click="goToLink()">
+          Înregistrează-te acum!
+        </AlphaButton>
       </div>
       <div class="hero-video-right relative h-0 mb-12 md:mb-0">
         <iframe width="100%" height="100%" class="absolute top-0 left-0" src="https://www.youtube.com/embed/GEgSBuYlSoA" />
