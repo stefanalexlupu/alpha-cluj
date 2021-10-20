@@ -3,8 +3,8 @@
     <div class="container mx-auto px-4 relative h-full flex flex-col md:grid md:grid-cols-2 md:justify-center md:items-center">
       <div class="relative mt-36 mb-12 text-center md:text-left md:pr-4 md:m-0">
         <h1 class="text-4xl text-white">Lorem ipsum</h1>
-        <p class="text-base text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam, at distinctio doloremque doloribus esse facere impedit inventore laborum modi mollitia natus nesciunt nihil nostrum odit porro quibusdam quidem reiciendis repellendus soluta sunt ut voluptatem.</p>
-        <p class="text-base text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dolorem iusto, nisi quas quia tempore unde? Assumenda dolores expedita officiis rerum! Adipisci architecto atque debitis earum eos esse in nam?</p>
+        <p class="mt-2 text-base text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam, at distinctio doloremque doloribus esse facere impedit inventore laborum modi mollitia natus nesciunt nihil nostrum odit porro quibusdam quidem reiciendis repellendus soluta sunt ut voluptatem.</p>
+        <p class="mt-2 text-base text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dolorem iusto, nisi quas quia tempore unde? Assumenda dolores expedita officiis rerum! Adipisci architecto atque debitis earum eos esse in nam?</p>
         <AlphaButton @click="goToLink()">
           Înregistrează-te acum!
         </AlphaButton>
