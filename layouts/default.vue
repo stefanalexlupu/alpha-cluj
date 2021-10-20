@@ -2,7 +2,16 @@
   <div>
     <TheNavBar />
     <Nuxt />
-    <!-- TODO: Implement the footer component -->
-    <!-- <TheFooter /> -->
+    <TheFooter />
   </div>
 </template>
+
+<script>
+import TheFooter from '@/components/TheFooter.vue'
+
+export default {
+  components: {
+    TheFooter
+  }
+}
+</script>

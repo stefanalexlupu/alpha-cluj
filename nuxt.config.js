@@ -25,6 +25,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '@/plugins/components.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -37,7 +38,9 @@ export default {
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    // vue-formulate
+    '@braid/vue-formulate/nuxt'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
