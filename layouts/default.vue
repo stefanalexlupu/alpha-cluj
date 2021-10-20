@@ -1,7 +1,6 @@
 <template>
   <div>
-    <!-- TODO: Implement the header component -->
-    <!-- <TheHeader /> -->
+    <TheNavBar />
     <Nuxt />
     <TheFooter />
   </div>

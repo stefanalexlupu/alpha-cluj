@@ -1,8 +1,7 @@
 <template>
   <div>
     <section id="top-section">
-      <!-- TODO: Create the top section -->
-      <!-- @Mihai Iov -->
+      <TheHeader />
     </section>
 
     <section id="about">
