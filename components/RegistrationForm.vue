@@ -7,21 +7,21 @@
       <FormulateInput
         label-class="is-required"
         type="text"
-        label="Nume si prenume"
+        label="Nume și prenume"
         name="name"
         validation="required"
         :validation-messages="{
-          required: 'Campul este obligatoriu',
+          required: 'Câmpul este obligatoriu',
         }"
       />
       <FormulateInput
         label-class="is-required"
         type="number"
-        label="Varsta"
+        label="Vârsta"
         name="age"
         validation="required"
         :validation-messages="{
-          required: 'Campul este obligatoriu',
+          required: 'Câmpul este obligatoriu',
         }"
       />
       <FormulateInput
@@ -31,24 +31,30 @@
         name="phone"
         validation="required"
         :validation-messages="{
-          required: 'Campul este obligatoriu',
+          required: 'Câmpul este obligatoriu',
         }"
       />
       <FormulateInput
         type="textarea"
-        label="Cum ai aflat despre intalnirile Alpha?"
+        label="Cum ai aflat despre întâlnirile Alpha?"
         name="info"
       />
       <FormulateInput
+        id="form-gdpr"
         label-class="is-required"
         type="checkbox"
-        label="Am citit si sunt de acord cu politica de protectie a datelor"
         name="gdpr"
         validation="required"
         :validation-messages="{
-          required: 'Campul este obligatoriu',
+          required: 'Câmpul este obligatoriu',
         }"
-      />
+      >
+        <template #label="{id}">
+          <label :for="id">
+            Am citit si sunt de acord cu <a href="https://bisericabetel.com/acord-de-confidentialitate-privind-protectia-datelor/" class="underline cursor-pointer" target="_blank">politica de protecție a datelor</a>
+          </label>
+        </template>
+      </FormulateInput>
       <AlphaButton @submit="submitRegistrationForm()">
         Trimite
       </AlphaButton>

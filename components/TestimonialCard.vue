@@ -5,14 +5,14 @@
         :src="image"
         :alt="name"
         class=" w-16 h-16 object-cover rounded-full"
-      />
+      >
       <span>
         <p class=" text-2xl text-white ">{{ name }}</p>
       </span>
     </div>
-    <p class=" text-base text-white">
-      {{ text }}
-    </p>
+    <div class="text-white space-y-2">
+      <slot />
+    </div>
   </div>
 </template>
 
@@ -25,10 +25,6 @@ export default {
       default: '/images/avatar.jpg'
     },
     name: {
-      type: String,
-      required: true
-    },
-    text: {
       type: String,
       required: true
     }

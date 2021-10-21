@@ -1,15 +1,21 @@
 <template>
-  <header class="w-full h-full relative bg-center bg-no-repeat bg-cover bg-gray-500 md:h-screen before:absolute">
+  <header class="w-full h-full relative bg-no-repeat bg-cover bg-bottom bg-gray-500 md:min-h-screen before:absolute">
     <div class="container mx-auto px-4 relative h-full gap-12 flex flex-col lg:grid lg:grid-cols-2 lg:justify-center lg:items-center">
       <div class="relative mt-36 text-center lg:text-left lg:m-0">
-        <h1 class="text-4xl text-white mb-8">
-          Lorem ipsum
+        <h1 class="text-4xl font-bold text-white mb-8">
+          Ai întrebări despre viață?
         </h1>
-        <p class="mb-4 text-base text-white">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam, at distinctio doloremque doloribus esse facere impedit inventore laborum modi mollitia natus nesciunt nihil nostrum odit porro quibusdam quidem reiciendis repellendus soluta sunt ut voluptatem.
+        <p class="mb-4 text-white">
+          Fiecare om ar trebui să fie un căutător al adevărului. Trăim într-o lume care promovează ideea că viața de aici e tot ceea ce este, că te naști, trăiești, mori și atât. Dar dacă nu se termina totul aici? Dacă ceea ce se vede nu e tot? Dacă exista Cineva peste toate lucrurile pe care noi le putem observa și înțelege?
         </p>
-        <p class="mb-4 text-base text-white">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dolorem iusto, nisi quas quia tempore unde? Assumenda dolores expedita officiis rerum! Adipisci architecto atque debitis earum eos esse in nam?
+        <p class="mb-4 text-white">
+          Alpha explorează această posibilitate.
+        </p>
+        <p class="mb-4 text-white">
+          Dacă te întrebi și tu aceste lucruri, atunci întâlnirile Alpha sunt pentru tine!
+        </p>
+        <p class="mb-4 text-lg text-white">
+          Te provocăm să te înscrii!
         </p>
         <a href="#register" class="inline-block rounded py-1 px-6 bg-primary-base hover:bg-primary-dark text-white">Înregistrează-te acum!</a>
       </div>
@@ -36,7 +42,7 @@ export default {
 <style>
 
   header {
-    background: url("static/bg.jpg");
+    background: url("static/header-background.jpg");
   }
 
   header::before {
