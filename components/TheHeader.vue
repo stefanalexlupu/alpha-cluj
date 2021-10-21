@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full h-full relative bg-center bg-no-repeat bg-cover bg-gray-500 md:h-screen before:absolute">
+  <header class="w-full h-full relative bg-no-repeat bg-cover bg-bottom bg-gray-500 md:min-h-screen before:absolute">
     <div class="container mx-auto px-4 relative h-full gap-12 flex flex-col lg:grid lg:grid-cols-2 lg:justify-center lg:items-center">
       <div class="relative mt-36 text-center lg:text-left lg:m-0">
         <h1 class="text-4xl font-bold text-white mb-8">
@@ -42,7 +42,7 @@ export default {
 <style>
 
   header {
-    background: url("static/bg.jpg");
+    background: url("static/header-background.jpg");
   }
 
   header::before {
