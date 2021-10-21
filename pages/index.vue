@@ -4,7 +4,21 @@
       <TheHeader />
     </section>
 
-    <section id="about">
+    <section class="font-serif text-center mx-auto my-16 max-w-4xl px-4">
+      <q class="block font-bold text-2xl md:text-3xl lg:text-4xl mb-4">
+        Fie exista Dumnezeu, fie nu. Ambele posibilitati sunt inspaimantatoare. Daca exista Dumnezeu, am face bine sa aflam cine e El, sa aflam ce vrea El si sa facem ceea ce zice El. Daca nu exista Dumnezeu, avem o problema, pentru ca noi gonim prin spatiu cu 66000 de mile pe ora si nimeni nu e in control.
+      </q>
+      <p
+        class="text-xs md:text-base"
+      >
+        [un astronom rus]
+      </p>
+    </section>
+
+    <section
+      id="
+        about"
+    >
       <!-- TODO: Create the about section -->
     </section>
 
