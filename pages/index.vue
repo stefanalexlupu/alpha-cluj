@@ -5,7 +5,8 @@
       <!-- @Mihai Iov -->
     </section>
 
-    <section id="about">
+    <section id="about" class="container mx-auto px-4">
+      <TextArea></TextArea>
       <!-- TODO: Create the about section -->
     </section>
 
@@ -36,11 +37,13 @@
 import AlphaCarousel from '@/components/AlphaCarousel.vue'
 import TestimonialCard from '@/components/TestimonialCard.vue'
 import RegistrationForm from '~/components/RegistrationForm.vue'
+import TextArea from '@/components/TextArea.vue'
 export default {
   components: {
     AlphaCarousel,
     TestimonialCard,
-    RegistrationForm
+    RegistrationForm,
+    TextArea
   },
   data: () => ({
     testimonials: [
