@@ -1,7 +1,7 @@
 <template>
   <header class="w-full h-full relative bg-center bg-no-repeat bg-cover bg-gray-500 md:h-screen before:absolute">
-    <div class="container mx-auto px-4 relative h-full flex flex-col lg:grid lg:grid-cols-2 lg:justify-center lg:items-center">
-      <div class="relative mt-36 mb-12 text-center lg:text-left lg:pr-4 lg:m-0">
+    <div class="container mx-auto px-4 relative h-full gap-12 flex flex-col lg:grid lg:grid-cols-2 lg:justify-center lg:items-center">
+      <div class="relative mt-36 text-center lg:text-left lg:m-0">
         <h1 class="text-4xl text-white mb-8">
           Lorem ipsum
         </h1>
