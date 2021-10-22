@@ -61,7 +61,7 @@
           </label>
         </template>
       </FormulateInput>
-      <AlphaButton as="FormulateInput" type="submit">
+      <AlphaButton as="FormulateInput" type="submit" target-class-attribute="input-class">
         Trimite
       </AlphaButton>
     </FormulateForm>
