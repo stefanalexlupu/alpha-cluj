@@ -40,6 +40,18 @@
           </TestimonialCard>
         </div>
 
+        <!-- AMALIA OȘAN -->
+        <div class="px-4">
+          <TestimonialCard
+            image="amalia-osan.jpeg"
+            name="Amalia Oșan"
+          >
+            <p>
+              Eram în căutarea unei relații cu Dumnezeu dar nu știam de unde sa încep. În urma sesiunilor Alpha am început să fac pași mici spre un Dumnezeu care știu că e acolo, mă așteaptă și mă iubește.
+            </p>
+          </TestimonialCard>
+        </div>
+
         <!-- PAUL ALBU -->
         <div class="px-4">
           <TestimonialCard
@@ -64,14 +76,14 @@
           </TestimonialCard>
         </div>
 
-        <!-- AMALIA OȘAN -->
+        <!-- STEFANIA ROSU -->
         <div class="px-4">
           <TestimonialCard
-            image="amalia-osan.jpeg"
-            name="Amalia Oșan"
+            image="stefania-rosu.jpeg"
+            name="Stefania Roșu"
           >
             <p>
-              Eram în căutarea unei relații cu Dumnezeu dar nu știam de unde sa încep. În urma sesiunilor Alpha am început să fac pași mici spre un Dumnezeu care știu că e acolo, mă așteaptă și mă iubește.
+              Pentru mine cursul Alpha a însemnat revitalizarea relației mele cu Dumnezeu, fundația căsuței pe care de această dată o voi construi pe stâncă.
             </p>
           </TestimonialCard>
         </div>

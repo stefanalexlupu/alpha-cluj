@@ -1,6 +1,9 @@
 <template>
   <section id="about" class="container mx-auto px-4">
     <div class="mb-8 md:grid md:grid-cols-2 md:gap-8 items-center">
+      <div class="md:order-last relative h-0 w-full mb-4 md:mb-0" style="padding-top: 67%">
+        <img src="eating-together.jpg" alt="People Eating Together" class="absolute inset-0 w-full h-full object-cover object-bottom">
+      </div>
       <div>
         <h1 class="mb-4 text-2xl font-bold">
           Ce sunt întâlnirile Alpha?
@@ -20,9 +23,6 @@
         <p>
           Nu există nicio taxă de participare – cursul Alpha este gratuit!
         </p>
-      </div>
-      <div class="relative h-0 w-full mb-4 md:mb-0" style="padding-top: 67%">
-        <img src="eating-together.jpg" alt="People Eating Together" class="absolute inset-0 w-full h-full object-cover object-bottom">
       </div>
     </div>
     <div class="mb-8 md:grid md:grid-cols-2 md:gap-8 items-center">
