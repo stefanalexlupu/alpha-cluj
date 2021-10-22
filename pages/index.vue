@@ -15,12 +15,7 @@
       </p>
     </section>
 
-    <section
-      id="
-        about"
-    >
-      <!-- TODO: Create the about section -->
-    </section>
+    <AboutSection />
 
     <section id="testimonials" class="container mx-auto mb-16 px-4">
       <h1 class="text-center font-bold text-5xl mb-8">
@@ -94,8 +89,10 @@
 import AlphaCarousel from '@/components/AlphaCarousel.vue'
 import TestimonialCard from '@/components/TestimonialCard.vue'
 import RegistrationForm from '~/components/RegistrationForm.vue'
+import AboutSection from '~/components/AboutSection.vue'
 export default {
   components: {
+    AboutSection,
     AlphaCarousel,
     TestimonialCard,
     RegistrationForm
