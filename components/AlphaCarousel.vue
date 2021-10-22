@@ -3,7 +3,6 @@
     dots
     autoplay
     :autoplay-speed="15000"
-    :dots-class="dotsClass"
     :slides-to-show="3"
     :responsive="settings"
   >
@@ -22,7 +21,6 @@ export default {
     VueSlickCarousel
   },
   data: () => ({
-    dotsClass: 'alpha-dots',
     settings: [
       {
         breakpoint: 768,
@@ -35,86 +33,29 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 /* SLICK DOTS THEMING */
 /* stylelint-disable */
-.slick-next, .slick-prev {
+>>> .slick-track {
+  display: flex;
+  align-items: stretch;
+}
+
+>>> .slick-slide {
+  height: inherit;
+}
+
+>>> .slick-slide > div, >>> .slick-slide > div > div {
+  height: 100%;
+}
+>>> .slick-next, >>> .slick-prev {
   display: none;
 }
-.alpha-dots {
-  position: absolute;
-  bottom: -25px;
 
-  display: block;
-
-  width: 100%;
-  padding: 0;
-  margin: 0;
-
-  list-style: none;
-
-  text-align: center;
-}
-.alpha-dots li {
-  position: relative;
-
-  display: inline-block;
-
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-  padding: 0;
-
-  cursor: pointer;
-}
-.alpha-dots li button {
-  font-size: 0;
-  line-height: 0;
-
-  display: block;
-
-  width: 20px;
-  height: 20px;
-  padding: 5px;
-
-  cursor: pointer;
-
-  color: transparent;
-  border: 0;
-  outline: none;
-  background: transparent;
-}
-.alpha-dots li button:hover,
-.alpha-dots li button:focus {
-  outline: none;
-}
-.alpha-dots li button:hover:before,
-.alpha-dots li button:focus:before {
-  opacity: 1;
-}
-.alpha-dots li button:before {
-  font-family: 'slick';
-  font-size: 6px;
-  line-height: 20px;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 20px;
-  height: 20px;
-
-  content: '•';
-  text-align: center;
-
-  opacity: 0.25;
+>>> .alpha-dots li button:before {
   color: theme('colors.foreground.base');
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-.alpha-dots li.slick-active button:before {
-  opacity: 0.75;
+>>> .alpha-dots li.slick-active button:before {
   color: theme('colors.foreground.base');
 }
 </style>

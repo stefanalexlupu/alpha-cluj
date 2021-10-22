@@ -36,8 +36,10 @@
         label="Telefon"
         name="phone"
         validation="required|phone"
+        placeholder="0700000000"
         :validation-messages="{
           required: 'Câmpul este obligatoriu',
+          phone: 'Introduceți un număr valid de telefon (fără spații)'
         }"
       />
       <FormulateInput

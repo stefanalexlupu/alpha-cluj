@@ -1,5 +1,5 @@
 <template>
-  <div class=" p-8 bg-foreground-base rounded ">
+  <div class=" p-8 bg-foreground-base rounded h-full">
     <div class="flex items-center gap-4 mb-4">
       <img
         :src="image"
