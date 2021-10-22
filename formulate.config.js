@@ -1,4 +1,10 @@
 export default {
+  rules: {
+    phone: ({ value }) => {
+      const isPhone = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/
+      return Promise.resolve(value === '' || isPhone.test(value))
+    }
+  },
   classes: {
     outer: 'mb-4',
     wrapper (context) {

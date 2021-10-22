@@ -3,7 +3,13 @@
     <h1 class="mb-6 mt-8 font-bold text-center text-4xl">
       Formular
     </h1>
-    <FormulateForm>
+    <div v-if="formError" class="rounded border-2 border-red-500 bg-red-100 p-4">
+      Se pare că a apărut o eroare la trimiterea înscrierii tale. Te rugăm să verifici conexiunea ta la internet, sau sa încerci din nou mai târziu.
+    </div>
+    <div v-else-if="formSubmitted" class="rounded border-2 border-green-500 bg-green-100 p-4">
+      Felicitări pentru că ai acceptat provocarea Alpha! Te vom contacta în cel mai scurt timp posibil pentru a-ți oferi detalii despre data și locația următoarei serii de întâlniri.
+    </div>
+    <FormulateForm v-else @submit="submitRegistrationForm">
       <FormulateInput
         label-class="is-required"
         type="text"
@@ -26,10 +32,10 @@
       />
       <FormulateInput
         label-class="is-required"
-        type="number"
+        type="text"
         label="Telefon"
         name="phone"
-        validation="required"
+        validation="required|phone"
         :validation-messages="{
           required: 'Câmpul este obligatoriu',
         }"
@@ -55,7 +61,7 @@
           </label>
         </template>
       </FormulateInput>
-      <AlphaButton @submit="submitRegistrationForm()">
+      <AlphaButton as="FormulateInput" type="submit">
         Trimite
       </AlphaButton>
     </FormulateForm>
@@ -64,7 +70,25 @@
 
 <script>
 export default {
-  name: 'RegistrationForm'
+  name: 'RegistrationForm',
+  data: () => ({
+    formSubmitted: false,
+    formError: false
+  }),
+  methods: {
+    async submitRegistrationForm (data) {
+      try {
+        const res = await this.$axios.post('contact', data)
+        if (res.data.created_at) {
+          this.formSubmitted = true
+        } else {
+          throw new Error('form error')
+        }
+      } catch (e) {
+        this.formError = true
+      }
+    }
+  }
 }
 </script>
 
