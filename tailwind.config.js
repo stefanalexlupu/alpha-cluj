@@ -1,5 +1,9 @@
 module.exports = {
-  purge: [],
+  purge: {
+    options: {
+      safelist: ['mb-4', 'mb-1', 'mr-1', 'flex', 'px-3', 'py-2', 'border', 'border-gray-400', 'rounded', 'outline-none', 'w-full', 'font-medium', 'text-sm', 'text-red-700', 'text-xs']
+    }
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
