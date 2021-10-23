@@ -49,7 +49,7 @@ export default {
   height: 100%;
 }
 >>> .slick-next, >>> .slick-prev {
-  display: none;
+  display: none !important;
 }
 
 >>> .alpha-dots li button:before {
