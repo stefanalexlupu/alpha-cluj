@@ -6,7 +6,7 @@
 
     <section class="font-serif text-center mx-auto my-16 max-w-4xl px-4">
       <q class="block font-bold text-2xl md:text-3xl lg:text-4xl mb-4">
-        Fie exista Dumnezeu, fie nu. Ambele posibilitati sunt inspaimantatoare. Daca exista Dumnezeu, am face bine sa aflam cine e El, sa aflam ce vrea El si sa facem ceea ce zice El. Daca nu exista Dumnezeu, avem o problema, pentru ca noi gonim prin spatiu cu 66000 de mile pe ora si nimeni nu e in control.
+        Fie există Dumnezeu, fie nu. Ambele posibilități sunt înspăimântătoare. Dacă există Dumnezeu, am face bine să aflăm cine e El, să aflăm ce vrea El și să facem ceea ce zice El. Dacă nu există Dumnezeu, avem o problemă, pentru că noi gonim prin spațiu cu 66000 de mile pe oră și nimeni nu e în control.
       </q>
       <p
         class="text-xs md:text-base"
